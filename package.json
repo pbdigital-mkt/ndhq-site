@@ -1,5 +1,1 @@
-{
-  "name": "ndhq-site",
-  "private": true,
-  "scripts": { "build": "node build.js" }
-}
+{ "name": "ndhq-oauth", "private": true, "scripts": { "start": "node server.js" } }
