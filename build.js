@@ -5,6 +5,9 @@ const path = require('path');
 
 const root = __dirname;
 const dist = path.join(root, 'dist');
+for (const f of ['content/site.json', 'template.html', 'favicon.svg', 'admin']) {
+  if (!fs.existsSync(path.join(root, f))) { console.error('Missing file or folder in the repository: ' + f + '. Upload it, keeping the same folder structure.'); process.exit(1); }
+}
 const site = JSON.parse(fs.readFileSync(path.join(root, 'content/site.json'), 'utf8'));
 let html = fs.readFileSync(path.join(root, 'template.html'), 'utf8');
 
@@ -39,6 +42,7 @@ fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist, { recursive: true });
 fs.writeFileSync(path.join(dist, 'index.html'), html);
 fs.cpSync(path.join(root, 'admin'), path.join(dist, 'admin'), { recursive: true });
-fs.cpSync(path.join(root, 'content/images'), path.join(dist, 'images'), { recursive: true });
+const imgs = path.join(root, 'content/images');
+if (fs.existsSync(imgs)) fs.cpSync(imgs, path.join(dist, 'images'), { recursive: true });
 fs.copyFileSync(path.join(root, 'favicon.svg'), path.join(dist, 'favicon.svg'));
 console.log('Built dist/index.html');
