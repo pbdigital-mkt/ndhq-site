@@ -2,7 +2,7 @@ backend:
   name: github
   repo: pbdigital-mkt/ndhq-site
   branch: main
-  base_url: https://YOUR-LOGIN-HELPER.onrender.com   # change to the address of your Render login helper (see oauth-proxy/README.md)
+  base_url: https://ndhq-sitelogin.onrender.com
   auth_endpoint: auth
 
 media_folder: content/images
