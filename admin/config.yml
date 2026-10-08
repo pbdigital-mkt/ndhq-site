@@ -1,1 +1,250 @@
+backend:
+  name: github
+  repo: pbdigital-mkt/ndhq-site
+  branch: main
+  base_url: https://YOUR-LOGIN-HELPER.onrender.com   # change to the address of your Render login helper (see oauth-proxy/README.md)
+  auth_endpoint: auth
 
+media_folder: content/images
+public_folder: /images
+site_url: /
+display_url: /
+locale: en
+
+collections:
+  - name: site
+    label: Website
+    files:
+      - name: content
+        label: All page text and photos
+        file: content/site.json
+        fields:
+          - label: Search and sharing
+            name: settings
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Page title (browser tab, Google), name: meta_title, widget: string }
+              - { label: Page description (Google, link previews), name: meta_description, widget: text }
+          - label: Show or hide sections
+            name: visibility
+            widget: object
+            collapsed: false
+            hint: Switch a section off to remove it from the page (and its menu link). Switch it on again any time. Your text is kept.
+            fields:
+              - { label: Scrolling words strip, name: marquee, widget: boolean, default: true }
+              - { label: Services, name: services, widget: boolean, default: true }
+              - { label: Selected work, name: work, widget: boolean, default: true }
+              - { label: Approach (Brand and Performance circles), name: approach, widget: boolean, default: true }
+              - { label: How it works (twelve weeks), name: method, widget: boolean, default: true }
+              - { label: Client quotes (In their words), name: words, widget: boolean, default: true }
+              - { label: About, name: about, widget: boolean, default: true }
+          - label: Photos
+            name: photos
+            widget: object
+            collapsed: false
+            hint: Add a photo to replace the generated picture. Leave empty to keep the original.
+            fields:
+              - label: "About photo (shows above the business cards)"
+                name: about
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Image, name: image, widget: image, required: false }
+                  - { label: Description for screen readers, name: alt, widget: string, required: false }
+              - label: "Case study 1 photo (replaces the Kestrel brand board)"
+                name: case1
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Image, name: image, widget: image, required: false }
+                  - { label: Description for screen readers, name: alt, widget: string, required: false }
+              - label: "Case study 2 photo (replaces the Meridew brand board)"
+                name: case2
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Image, name: image, widget: image, required: false }
+                  - { label: Description for screen readers, name: alt, widget: string, required: false }
+              - label: "Case study 3 photo (replaces the Tidewell brand board)"
+                name: case3
+                widget: object
+                collapsed: true
+                fields:
+                  - { label: Image, name: image, widget: image, required: false }
+                  - { label: Description for screen readers, name: alt, widget: string, required: false }
+          - label: "Header"
+            name: header
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Button: Start a project", name: t0, widget: string }
+          - label: "Home (top)"
+            name: hero
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Badge: Digital marketing × brand strategy · 2 projec...", name: t1, widget: string }
+              - { label: "Main heading: Marketing that", name: t2, widget: string }
+              - { label: "Main heading: performs", name: t3, widget: string }
+              - { label: "Main heading: . Branding that", name: t4, widget: string }
+              - { label: "Main heading: lasts", name: t5, widget: string }
+              - { label: "Main heading: .", name: t6, widget: string }
+              - { label: "Intro paragraph: We help founder-led companies decide what the...", name: t7, widget: text }
+              - { label: "Button: Start a project", name: t8, widget: string }
+              - { label: "Button: See selected work", name: t9, widget: string }
+          - label: "Services"
+            name: services
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Small label: Scope of work", name: t10, widget: string }
+              - { label: "Section heading: Five services, one point of view.", name: t11, widget: string }
+              - { label: "Intro text: Each service ends with something your team ca...", name: t12, widget: text }
+              - { label: "Sub-heading: Brand strategy & identity", name: t13, widget: string }
+              - { label: "Service description: Positioning, audience research, naming and me...", name: t14, widget: text }
+              - { label: "Deliverables line: Positioning map · Message house · Brand guide...", name: t15, widget: string }
+              - { label: "Sub-heading: Performance marketing", name: t16, widget: string }
+              - { label: "Service description: Paid search and paid social built around a ta...", name: t17, widget: text }
+              - { label: "Deliverables line: Audit · Channel plan · Weekly test log", name: t18, widget: string }
+              - { label: "Sub-heading: Content & search", name: t19, widget: string }
+              - { label: "Service description: Editorial plans and landing pages mapped to h...", name: t20, widget: text }
+              - { label: "Deliverables line: Keyword map · Calendar · Page briefs", name: t21, widget: string }
+              - { label: "Sub-heading: Lifecycle & CRM", name: t22, widget: string }
+              - { label: "Service description: Email and SMS flows for onboarding, win-back ...", name: t23, widget: text }
+              - { label: "Deliverables line: Flow map · Copy · Segment rules", name: t24, widget: string }
+              - { label: "Sub-heading: Measurement", name: t25, widget: string }
+              - { label: "Service description: GA4, attribution and a dashboard the leadersh...", name: t26, widget: text }
+              - { label: "Deliverables line: Tracking plan · Looker Studio dashboard · Mon...", name: t27, widget: string }
+          - label: "Selected work"
+            name: work
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Small label: Selected work", name: t28, widget: string }
+              - { label: "Section heading: Brands that became easier to choose.", name: t29, widget: string }
+              - { label: "Intro text: Every project starts with one question: why s...", name: t30, widget: text }
+              - { label: "Case tag: Ecommerce · Sample case", name: t31, widget: string }
+              - { label: "Sub-heading: Kestrel Outdoor", name: t32, widget: string }
+              - { label: "Case description: Moved a gear retailer from discount-led ads t...", name: t33, widget: text }
+              - { label: "Work chip: Positioning", name: t34, widget: string }
+              - { label: "Work chip: Identity", name: t35, widget: string }
+              - { label: "Work chip: Paid social", name: t36, widget: string }
+              - { label: "Work chip: Email flows", name: t37, widget: string }
+              - { label: "Metric number: −38%", name: t38, widget: string }
+              - { label: "Metric label: CAC", name: t39, widget: string }
+              - { label: "Metric number: 3.6×", name: t40, widget: string }
+              - { label: "Metric label: ROAS, from 2.1×", name: t41, widget: string }
+              - { label: "Metric number: +22%", name: t42, widget: string }
+              - { label: "Metric label: Repeat buyers", name: t43, widget: string }
+              - { label: "Case tag: B2B software · Sample case", name: t44, widget: string }
+              - { label: "Sub-heading: Meridew Analytics", name: t45, widget: string }
+              - { label: "Case description: Replaced three competing value propositions w...", name: t46, widget: text }
+              - { label: "Work chip: Messaging", name: t47, widget: string }
+              - { label: "Work chip: Website copy", name: t48, widget: string }
+              - { label: "Work chip: Paid search", name: t49, widget: string }
+              - { label: "Work chip: Sales enablement", name: t50, widget: string }
+              - { label: "Metric number: +74%", name: t51, widget: string }
+              - { label: "Metric label: Demo requests", name: t52, widget: string }
+              - { label: "Metric number: +61%", name: t53, widget: string }
+              - { label: "Metric label: Branded search", name: t54, widget: string }
+              - { label: "Metric number: −19d", name: t55, widget: string }
+              - { label: "Metric label: Sales cycle", name: t56, widget: string }
+              - { label: "Case tag: Local services · Sample case", name: t57, widget: string }
+              - { label: "Sub-heading: Tidewell Dental", name: t58, widget: string }
+              - { label: "Case description: Turned patient reviews into the brand voice, ...", name: t59, widget: text }
+              - { label: "Work chip: Voice from reviews", name: t60, widget: string }
+              - { label: "Work chip: Identity refresh", name: t61, widget: string }
+              - { label: "Work chip: Local SEO", name: t62, widget: string }
+              - { label: "Work chip: Google Ads", name: t63, widget: string }
+              - { label: "Metric number: 2.4×", name: t64, widget: string }
+              - { label: "Metric label: Booking calls", name: t65, widget: string }
+              - { label: "Metric number: −44%", name: t66, widget: string }
+              - { label: "Metric label: Cost per new patient", name: t67, widget: string }
+              - { label: "Metric number: 4.8", name: t68, widget: string }
+              - { label: "Metric label: Google rating, from 4.3", name: t69, widget: string }
+          - label: "Approach"
+            name: approach
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Small label: Approach", name: t70, widget: string }
+              - { label: "Section heading: Brand builds the preference. Performance coll...", name: t71, widget: string }
+              - { label: "Approach text: Performance alone", name: t72, widget: string }
+              - { label: "Approach text: costs more for every customer over time, beca...", name: t73, widget: text }
+              - { label: "Approach text: Brand alone", name: t74, widget: string }
+              - { label: "Approach text: is hard to defend in a budget meeting, becaus...", name: t75, widget: string }
+              - { label: "Approach text: We work on both together, so every campaign c...", name: t76, widget: text }
+          - label: "How it works"
+            name: method
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Small label: How an engagement runs", name: t77, widget: string }
+              - { label: "Section heading: Twelve weeks from audit to first results.", name: t78, widget: string }
+              - { label: "Intro text: Each phase ends with something you can use. T...", name: t79, widget: text }
+              - { label: "Sub-heading: 1", name: t80, widget: string }
+              - { label: "Sub-heading: Audit", name: t81, widget: string }
+              - { label: "Step text: Review the brand, ad accounts and analytics, ...", name: t82, widget: text }
+              - { label: "Weeks label: Weeks 1–2", name: t83, widget: string }
+              - { label: "Sub-heading: 2", name: t84, widget: string }
+              - { label: "Sub-heading: Position", name: t85, widget: string }
+              - { label: "Step text: Agree the positioning statement and message h...", name: t86, widget: text }
+              - { label: "Weeks label: Weeks 3–4", name: t87, widget: string }
+              - { label: "Sub-heading: 3", name: t88, widget: string }
+              - { label: "Sub-heading: Build", name: t89, widget: string }
+              - { label: "Step text: Produce the identity or campaign assets, land...", name: t90, widget: text }
+              - { label: "Weeks label: Weeks 5–8", name: t91, widget: string }
+              - { label: "Sub-heading: 4", name: t92, widget: string }
+              - { label: "Sub-heading: Grow", name: t93, widget: string }
+              - { label: "Step text: Launch, run weekly tests, move budget toward ...", name: t94, widget: text }
+              - { label: "Weeks label: Weeks 9–12", name: t95, widget: string }
+          - label: "Client quotes"
+            name: words
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Small label: In their words", name: t96, widget: string }
+              - { label: "Section heading: What clients say after the project ends.", name: t97, widget: string }
+              - { label: "Quote: We stopped arguing about what to say and star...", name: t98, widget: text }
+              - { label: "Quote name: Priya S.", name: t99, widget: string }
+              - { label: "Quote role: Head of Growth, Meridew Analytics", name: t100, widget: string }
+              - { label: "Quote role: Sample quote", name: t101, widget: string }
+              - { label: "Quote: The team read our reviews before the first ca...", name: t102, widget: text }
+              - { label: "Quote name: Dan K.", name: t103, widget: string }
+              - { label: "Quote role: Owner, Tidewell Dental", name: t104, widget: string }
+              - { label: "Quote role: Sample quote", name: t105, widget: string }
+          - label: "About"
+            name: about
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Small label: About", name: t106, widget: string }
+              - { label: "Section heading: Brand and performance, under one roof.", name: t107, widget: string }
+              - { label: "About text: NDHQ is a digital marketing and branding agen...", name: t108, widget: text }
+              - { label: "About text: That mix is why brand work with us comes with...", name: t109, widget: text }
+              - { label: "Fact label: Certified", name: t110, widget: string }
+              - { label: "Fact value: Google Ads · Meta Blueprint · HubSpot Inbound", name: t111, widget: string }
+              - { label: "Fact label: Tools", name: t112, widget: string }
+              - { label: "Fact value: GA4 · Looker Studio · Semrush · Figma · HubSp...", name: t113, widget: string }
+              - { label: "Fact label: Not a fit", name: t114, widget: string }
+              - { label: "Fact value: One-off logo jobs, and campaigns with no budg...", name: t115, widget: string }
+              - { label: "Business card line: Digital marketing & brand strategy", name: t116, widget: string }
+              - { label: "Business card email: hello@ndhq.example", name: t117, widget: string }
+          - label: "Contact"
+            name: contact
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Small label: Contact", name: t118, widget: string }
+              - { label: "Section heading: Tell us what you want to grow.", name: t119, widget: string }
+              - { label: "Contact text: Send two or three lines about your business, ...", name: t120, widget: text }
+              - { label: "Email address: hello@ndhq.example", name: t121, widget: string }
+              - { label: "Button: Open in email app", name: t122, widget: string }
+          - label: "Footer"
+            name: footer
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Footer text: © 2026 NDHQ", name: t123, widget: string }
+              - { label: "Footer text: Names, quotes, figures and availability on th...", name: t124, widget: string }
