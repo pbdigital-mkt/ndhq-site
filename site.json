@@ -1,0 +1,178 @@
+{
+  "settings": {
+    "meta_title": "NDHQ | Digital marketing and brand strategy",
+    "meta_description": "NDHQ is a digital marketing and branding agency. Brand strategy, performance marketing, content and search, lifecycle and measurement under one point of view."
+  },
+  "visibility": {
+    "marquee": true,
+    "services": true,
+    "work": true,
+    "approach": true,
+    "method": true,
+    "words": true,
+    "about": true
+  },
+  "photos": {
+    "about": {
+      "image": "",
+      "alt": ""
+    },
+    "case1": {
+      "image": "",
+      "alt": ""
+    },
+    "case2": {
+      "image": "",
+      "alt": ""
+    },
+    "case3": {
+      "image": "",
+      "alt": ""
+    }
+  },
+  "header": {
+    "t0": "Start a project"
+  },
+  "hero": {
+    "t1": "Digital marketing × brand strategy · 2 project slots open, Q4 2026",
+    "t2": "Marketing that",
+    "t3": "performs",
+    "t4": ". Branding that",
+    "t5": "lasts",
+    "t6": ".",
+    "t7": "We help founder-led companies decide what they stand for, say it the same way in every channel, and back it with paid media, search and email that you can measure.",
+    "t8": "Start a project",
+    "t9": "See selected work"
+  },
+  "services": {
+    "t10": "Scope of work",
+    "t11": "Five services, one point of view.",
+    "t12": "Each service ends with something your team can use without us: a map, a guideline, a plan or a dashboard.",
+    "t13": "Brand strategy & identity",
+    "t14": "Positioning, audience research, naming and messaging, then the visual identity and tone of voice to match, written up as guidelines your designers and writers follow.",
+    "t15": "Positioning map · Message house · Brand guidelines · Voice chart",
+    "t16": "Performance marketing",
+    "t17": "Paid search and paid social built around a target cost per acquisition, with creative tested in rounds.",
+    "t18": "Audit · Channel plan · Weekly test log",
+    "t19": "Content & search",
+    "t20": "Editorial plans and landing pages mapped to how buyers search and compare, from first query to purchase.",
+    "t21": "Keyword map · Calendar · Page briefs",
+    "t22": "Lifecycle & CRM",
+    "t23": "Email and SMS flows for onboarding, win-back and repeat purchase, with segmentation in your CRM.",
+    "t24": "Flow map · Copy · Segment rules",
+    "t25": "Measurement",
+    "t26": "GA4, attribution and a dashboard the leadership team reads on Monday, so budget moves follow evidence.",
+    "t27": "Tracking plan · Looker Studio dashboard · Monthly review"
+  },
+  "work": {
+    "t28": "Selected work",
+    "t29": "Brands that became easier to choose.",
+    "t30": "Every project starts with one question: why should this customer pick you over the next option? These are the answers, six months in.",
+    "t31": "Ecommerce · Sample case",
+    "t32": "Kestrel Outdoor",
+    "t33": "Moved a gear retailer from discount-led ads to a durability story, then rebuilt the offer ladder and creative system in ten weeks.",
+    "t34": "Positioning",
+    "t35": "Identity",
+    "t36": "Paid social",
+    "t37": "Email flows",
+    "t38": "−38%",
+    "t39": "CAC",
+    "t40": "3.6×",
+    "t41": "ROAS, from 2.1×",
+    "t42": "+22%",
+    "t43": "Repeat buyers",
+    "t44": "B2B software · Sample case",
+    "t45": "Meridew Analytics",
+    "t46": "Replaced three competing value propositions with one, rewrote the site around it, and aligned paid search and outbound to the same message.",
+    "t47": "Messaging",
+    "t48": "Website copy",
+    "t49": "Paid search",
+    "t50": "Sales enablement",
+    "t51": "+74%",
+    "t52": "Demo requests",
+    "t53": "+61%",
+    "t54": "Branded search",
+    "t55": "−19d",
+    "t56": "Sales cycle",
+    "t57": "Local services · Sample case",
+    "t58": "Tidewell Dental",
+    "t59": "Turned patient reviews into the brand voice, refreshed the clinic identity and rebuilt local search and Google Ads around new-patient enquiries.",
+    "t60": "Voice from reviews",
+    "t61": "Identity refresh",
+    "t62": "Local SEO",
+    "t63": "Google Ads",
+    "t64": "2.4×",
+    "t65": "Booking calls",
+    "t66": "−44%",
+    "t67": "Cost per new patient",
+    "t68": "4.8",
+    "t69": "Google rating, from 4.3"
+  },
+  "approach": {
+    "t70": "Approach",
+    "t71": "Brand builds the preference. Performance collects the demand.",
+    "t72": "Performance alone",
+    "t73": "costs more for every customer over time, because nobody has a reason to choose you without the ad.",
+    "t74": "Brand alone",
+    "t75": "is hard to defend in a budget meeting, because nobody can see what it earned.",
+    "t76": "We work on both together, so every campaign carries the positioning and every brand decision has a number attached."
+  },
+  "method": {
+    "t77": "How an engagement runs",
+    "t78": "Twelve weeks from audit to first results.",
+    "t79": "Each phase ends with something you can use. The bars show which of the twelve weeks it occupies.",
+    "t80": "1",
+    "t81": "Audit",
+    "t82": "Review the brand, ad accounts and analytics, and run eight to ten customer or sales calls. You get a findings memo with the three biggest gaps.",
+    "t83": "Weeks 1–2",
+    "t84": "2",
+    "t85": "Position",
+    "t86": "Agree the positioning statement and message house, then test them on a small audience before anything is produced.",
+    "t87": "Weeks 3–4",
+    "t88": "3",
+    "t89": "Build",
+    "t90": "Produce the identity or campaign assets, landing pages and tracking, and set up the first channels.",
+    "t91": "Weeks 5–8",
+    "t92": "4",
+    "t93": "Grow",
+    "t94": "Launch, run weekly tests, move budget toward what works and review results monthly. Many clients continue on a retainer from here.",
+    "t95": "Weeks 9–12"
+  },
+  "words": {
+    "t96": "In their words",
+    "t97": "What clients say after the project ends.",
+    "t98": "We stopped arguing about what to say and started arguing about where to say it. That changed our marketing meetings.",
+    "t99": "Priya S.",
+    "t100": "Head of Growth, Meridew Analytics",
+    "t101": "Sample quote",
+    "t102": "The team read our reviews before the first call and found the line our patients already used. The new campaigns sounded like us from day one.",
+    "t103": "Dan K.",
+    "t104": "Owner, Tidewell Dental",
+    "t105": "Sample quote"
+  },
+  "about": {
+    "t106": "About",
+    "t107": "Brand and performance, under one roof.",
+    "t108": "NDHQ is a digital marketing and branding agency. We started in paid media, added brand strategy when clients kept asking why good ads still did not convert, and now run both together.",
+    "t109": "That mix is why brand work with us comes with a media plan, and media work comes with a point of view. You work directly with the people doing the work, with no account managers in between.",
+    "t110": "Certified",
+    "t111": "Google Ads · Meta Blueprint · HubSpot Inbound",
+    "t112": "Tools",
+    "t113": "GA4 · Looker Studio · Semrush · Figma · HubSpot · Klaviyo",
+    "t114": "Not a fit",
+    "t115": "One-off logo jobs, and campaigns with no budget for testing",
+    "t116": "Digital marketing & brand strategy",
+    "t117": "hello@ndhq.example"
+  },
+  "contact": {
+    "t118": "Contact",
+    "t119": "Tell us what you want to grow.",
+    "t120": "Send two or three lines about your business, your current marketing and the result you need. We reply within two working days.",
+    "t121": "hello@ndhq.example",
+    "t122": "Open in email app"
+  },
+  "footer": {
+    "t123": "© 2026 NDHQ",
+    "t124": "Names, quotes, figures and availability on this page are sample content."
+  }
+}
